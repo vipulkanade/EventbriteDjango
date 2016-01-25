@@ -14,7 +14,7 @@ ___
 6. python manage.py migrate
 7. python manage.py runserver (can also give ip:port_number to run on specific combo | default is 127.0.0.1:8000)
 
-
+###Note
 SECRET_KEY and AUTH_TOKEN have been masked for security reasons.
 This can be substituted in file [bin/activate] (https://github.com/vipulkanade/EventbriteDjango/blob/master/bin/activate) on line 46, 47 respectively.
 
@@ -26,7 +26,7 @@ export AUTH_TOKEN="XXXXXXXXXXXXXXXXXXXX"
 
 ___
 
-# Demo 
+## Demo 
 ### [Evenbrite App Demo] (http://eventbrite-app.herokuapp.com/)
 
 ___
