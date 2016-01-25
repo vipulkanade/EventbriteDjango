@@ -36,5 +36,5 @@ ___
 ###Code
 MIT License [see here] (https://github.com/vipulkanade/EventbriteDjango/blob/master/LICENSE)
 
-Images
+###Images
 [Creative Commons Attribution 3.0 Unported (CC BY 3.0) License] (http://creativecommons.org/licenses/by/3.0/)
