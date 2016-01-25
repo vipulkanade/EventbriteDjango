@@ -22,7 +22,8 @@ This can be substituted in file [bin/activate] (https://github.com/vipulkanade/E
 export SECRET_KEY='XXXXXXXXXXXXXXXXXXXX'
 export AUTH_TOKEN="XXXXXXXXXXXXXXXXXXXX"
 ```
-AUTH_TOKEN can be generated from [Eventbrite Apps](http://eventbrite.com/myaccount/apps/)
+#####AUTH_TOKEN can be generated or used from existing [Eventbrite Apps](http://eventbrite.com/myaccount/apps/)
+#####SECRET_KEY is key generated for your Django App
 
 ___
 
