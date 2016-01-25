@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load material_form %}
+
+
+{% block title%}{{ title }}{% endblock %}
+
+
+{% block content %}
+
+<form class="form" action="{% url 'getEvents' %}" method = "POST">
+  {% csrf_token %}
+
+  {% form form=form %}{% endform %}
+    <input class = "btn btn-primary btn-lg"
+    type = "submit" value = "Search">
+</form>
+
+{% endblock %}

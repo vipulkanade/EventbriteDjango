@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block js %}
+<script src="{% static "proj/js/jquery.simplePagination.js" %}"></script>
+
+<script>
+$.ajaxSetup({data: {
+    csrfmiddlewaretoken: '{{ csrf_token }}'
+}});
+
+window.onload = function() {
+    var $retrieving = $('#retrieving').hide();
+    var $content = $('#events_detail').show();
+    $(document).ajaxStart(function () {
+        $retrieving.show();
+        $content.hide();
+    });
+    $(document).ajaxStop(function () {
+        $retrieving.hide();
+        $content.show();
+    });
+}
+
+//simplePagination.js setup
+$(function() {
+    $('#pg_selected').pagination({
+        items: "{{ items }}",
+        itemsOnPage: "{{ itemsOnPage }}",
+        cssStyle: 'light-theme current',
+        onPageClick: function(pageNumber){
+            $.ajax({
+                method: 'POST',
+                url: '/results/',
+                data: {'page_id': pageNumber},
+                success: function (response) {
+                    $('#events_detail').html(response);
+                },
+                error: function (data) {
+                     alert("Something went wrong! Please try again later.");
+                }
+            })
+        }
+    });
+});
+
+</script>
+{% endblock %}
+
+{% block css %}
+<link href="{% static "proj/css/simplePagination.css" %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block title%}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="list-group">
+    <div id= "retrieving">
+        <img src ="{% static "proj/img/magnify.gif" %}"  />
+    </div>
+
+    <div id = "events_detail">
+        {% include 'event_details.html' %}
+    </div>
+
+    <div id="pg_selected">
+    </div>
+</div>
+
+{% endblock %}
+
+
+

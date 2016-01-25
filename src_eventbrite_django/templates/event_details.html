@@ -1,0 +1,14 @@
+
+{% for event in events %}
+    <div class="list-group-item card card-body" >
+    	<div class = "ctn">
+    		<img src="{{ event.logo.url }}" alt="No Image currently available!">	
+    	</div>
+      <div>
+        <h4 class="font-custom-color-event-heading">{{ event.name.text }}</h4>
+        <h5 class="font-custom-color-event-date">Happening On (Date and Time): {{ event.start.utc }} </br>
+        </h5>
+        <p><a href="{{ event.url }}" class="btn btn-primary" role="button">More Info/ Ticketing</a>
+      </div>
+    </div>
+{% endfor %}
