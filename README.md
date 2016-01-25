@@ -4,7 +4,7 @@ This is an Eventbrite app, which lets user select 3 categories and displays the 
 It has full setup with Virtual environment. 
 ___
 
-## Running the App
+## Usage Instructions
 
 1. Download or Clone this Repo
 2. To start virtual environment traverse to folder cloned or extracted too
