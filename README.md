@@ -7,7 +7,7 @@ ___
 
 SECRET_KEY and AUTH_TOKEN have been masked for security reasons.
 
-This can be substituted in file bin/activate on line 46, 47 respectively.
+This can be substituted in file [bin/activate] (https://github.com/vipulkanade/EventbriteDjango/blob/master/bin/activate) on line 46, 47 respectively.
 
 ```bash
 export SECRET_KEY='XXXXXXXXXXXXXXXXXXXX'
