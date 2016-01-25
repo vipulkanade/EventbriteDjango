@@ -15,8 +15,9 @@ ___
 7. python manage.py runserver (can also give ip:port_number to run on specific combo | default is 127.0.0.1:8000)
 
 ###Note
-SECRET_KEY and AUTH_TOKEN have been masked for security reasons.
-This can be substituted in file [bin/activate] (https://github.com/vipulkanade/EventbriteDjango/blob/master/bin/activate) on line 46, 47 respectively.
+*SECRET_KEY* and *AUTH_TOKEN* have been masked for security reasons.
+
+These can be substituted in file [bin/activate] (https://github.com/vipulkanade/EventbriteDjango/blob/master/bin/activate) on line 46, 47 respectively.
 
 ```bash
 export SECRET_KEY='XXXXXXXXXXXXXXXXXXXX'
