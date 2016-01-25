@@ -23,6 +23,7 @@ export SECRET_KEY='XXXXXXXXXXXXXXXXXXXX'
 export AUTH_TOKEN="XXXXXXXXXXXXXXXXXXXX"
 ```
 _AUTH_TOKEN can be generated or used from existing_ [Eventbrite Apps](http://eventbrite.com/myaccount/apps/)
+
 _SECRET_KEY is key generated for your Django App_
 
 ___
