@@ -9,11 +9,11 @@ ___
 1. Download or Clone this Repo
 2. To start virtual environment traverse to folder cloned or extracted too
 3. Perform following commands
-⋅⋅1. source bin/activate
-⋅⋅2. cd src_eventbrite_django
-⋅⋅3. python manage.py makemigrations
-⋅⋅4. python manage.py migrate
-⋅⋅5. python manage.py runserver (can also give ip:port_number to run on specific combo | default is 127.0.0.1:8000)
+ ⋅⋅* source bin/activate
+ ⋅⋅* cd src_eventbrite_django
+ ⋅⋅* python manage.py makemigrations
+ ⋅⋅* python manage.py migrate
+ ⋅⋅* python manage.py runserver (can also give ip:port_number to run on specific combo | default is 127.0.0.1:8000)
 
 
 SECRET_KEY and AUTH_TOKEN have been masked for security reasons.
