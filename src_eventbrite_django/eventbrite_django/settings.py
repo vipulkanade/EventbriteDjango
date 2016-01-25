@@ -87,16 +87,14 @@ WSGI_APPLICATION = 'eventbrite_django.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-DATABASES['default'] =  dj_database_url.config()
+#DATABASES['default'] =  dj_database_url.config()
 
 # Enable Persistent Connections
-DATABASES['default']['CONN_MAX_AGE'] = 500
+#DATABASES['default']['CONN_MAX_AGE'] = 500
+
+DATABASE_URL = 'sqlite://' + os.path.join(BASE_DIR, 'db.sqlite3')
+
+DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 
 # Internationalization
